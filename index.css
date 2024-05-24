@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "ar ar"
+    "f f";
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    grid-area: ar;
+}
+
+footer {
+    grid-area: f;
+}
+
+.jatekter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.jatekter div {
+    aspect-ratio: 1;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 35px;
+    cursor: grab;
+}
